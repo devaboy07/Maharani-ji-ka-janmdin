@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Maharanii 💗</title>
+
+<style>
+
+/* =========================
+   BASIC SETUP
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffe6f2,
+        #fff4fa,
+        #ffe1ec
+    );
+
+    color: #6b2948;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart {
+    position: fixed;
+    z-index: 1;
+
+    font-size: 20px;
+
+    opacity: 0.65;
+
+    pointer-events: none;
+
+    animation: floatHeart 5s infinite ease-in-out;
+}
+
+.h1 {
+    left: 8%;
+    top: 12%;
+}
+
+.h2 {
+    right: 9%;
+    top: 20%;
+    animation-delay: 1s;
+}
+
+.h3 {
+    left: 13%;
+    bottom: 17%;
+    animation-delay: 2s;
+}
+
+.h4 {
+    right: 13%;
+    bottom: 12%;
+    animation-delay: 3s;
+}
+
+.h5 {
+    left: 48%;
+    top: 7%;
+    animation-delay: 1.5s;
+}
+
+@keyframes floatHeart {
+
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(8deg);
+    }
+
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    padding: 30px 23px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.82);
+
+    border: 2px solid rgba(255,150,190,0.35);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 45px rgba(150,60,100,0.18);
+
+    backdrop-filter: blur(10px);
+
+    animation: pageAppear 0.9s ease;
+}
+
+@keyframes pageAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+
+/* =========================
+   PAGE 1
+========================= */
+
+#page1 {
+    display: flex;
+}
+
+.tiny {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.page1-title {
+    margin: 5px 0 20px;
+
+    font-size: 31px;
+
+    color: #d94f82;
+
+    line-height: 1.2;
+}
+
+.message {
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    color: #63334a;
+}
+
+.divider {
+    font-size: 21px;
+
+    margin: 18px 0;
+}
+
+.question {
+    font-size: 23px;
+
+    font-weight: 700;
+
+    line-height: 1.45;
+
+    margin: 20px 0 25px;
+
+    color: #b93669;
+}
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+button {
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 13px 27px;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+.yes {
+    background: #e75480;
+
+    color: white;
+
+    box-shadow:
+        0 6px 15px rgba(215,70,120,0.25);
+}
+
+.no {
+    background: #f5d6e2;
+
+    color: #9b4767;
+}
+
+.footer {
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    opacity: 0.6;
+}
+
+
+/* =========================
+   SAD CAT SCREEN
+========================= */
+
+#sadScreen {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 50;
+
+    background: linear-gradient(
+        135deg,
+        #ffe6f2,
+        #fff4fa,
+        #ffe1ec
+    );
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+#cat {
+    font-size: 100px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+
+#sadText {
+    font-size: 20px;
+
+    color: #a33d62;
+
+    margin-bottom: 25px;
+
+    padding: 0 25px;
+}
+
+#sadButtons {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   PAGE 2
+========================= */
+
+#page2 {
+    display: none;
+}
+
+.page2-title {
+    color: #d94f82;
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ENVELOPE */
+
+#envelopeSection {
+    animation: pageAppear 0.8s ease;
+}
+
+.envelope-area {
+    cursor: pointer;
+
+    margin-top: 25px;
+}
+
+.envelope {
+    position: relative;
+
+    width: 190px;
+
+    height: 125px;
+
+    margin: auto;
+
+    background: #f58bad;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 10px 25px rgba(180,70,110,0.2);
+
+    transition: 0.4s ease;
+}
+
+.envelope:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.flap {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 95px solid transparent;
+
+    border-right: 95px solid transparent;
+
+    border-top: 70px solid #ffabc2;
+
+    transform-origin: top;
+
+    transition: 0.8s ease;
+
+    z-index: 3;
+}
+
+.letter {
+    position: absolute;
+
+    width: 165px;
+
+    height: 105px;
+
+    left: 12px;
+
+    top: 8px;
+
+    background: white;
+
+    border-radius: 5px;
+
+    z-index: 1;
+
+    transition: 0.8s ease;
+}
+
+.envelope.open .flap {
+    transform: rotateX(180deg);
+}
+
+.envelope.open .letter {
+    transform: translateY(-75px);
+}
+
+.envelope-text {
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    color: #a33d62;
+}
+
+
+/* MESSAGE */
+
+#messageSection {
+    display: none;
+
+    animation: messageAppear 1s ease;
+}
+
+@keyframes messageAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.letter-message {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    text-align: left;
+
+    color: #63334a;
+}
+
+.highlight {
+    text-align: center;
+
+    font-size: 21px;
+
+    color: #c53e70;
+
+    margin: 25px 0;
+}
+
+
+/* CAKE */
+
+.cake {
+    font-size: 75px;
+
+    margin: 15px 0 5px;
+
+    animation: cakeBounce 1.5s infinite ease-in-out;
+}
+
+@keyframes cakeBounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+}
+
+
+/* ICE CREAM */
+
+.icecream {
+    font-size: 60px;
+
+    margin: 8px 0;
+
+    animation: icecreamFloat 2s infinite ease-in-out;
+}
+
+@keyframes icecreamFloat {
+
+    0%, 100% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg) translateY(-4px);
+    }
+
+}
+
+.ice-text {
+    font-size: 16px;
+
+    color: #9b4767;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PAGE 3
+========================= */
+
+#page3 {
+    display: none;
+}
+
+
+/* Transition overlay */
+
+#transition {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    background: linear-gradient(
+        135deg,
+        #ffe6f2,
+        #fff4fa,
+        #ffe1ec
+    );
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.transition-heart {
+    font-size: 70px;
+
+    animation: heartPulse 1.2s infinite;
+}
+
+.transition-text {
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #b93669;
+}
+
+@keyframes heartPulse {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+}
+
+
+/* Page 3 heading */
+
+.final-title {
+    font-size: 30px;
+
+    color: #d94f82;
+
+    margin-bottom: 25px;
+}
+
+.promise {
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    text-align: left;
+
+    color: #63334a;
+}
+
+.promise-box {
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    background: rgba(255,220,235,0.55);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #7b3153;
+}
+
+.love-title {
+    margin-top: 30px;
+
+    font-size: 30px;
+
+    color: #d9366e;
+
+    animation: loveGlow 1.8s infinite ease-in-out;
+}
+
+@keyframes loveGlow {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+}
+
+.final-text {
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    text-align: left;
+
+    color: #63334a;
+}
+
+.quote {
+    margin: 22px 0;
+
+    padding: 18px;
+
+    border-left: 4px solid #e75480;
+
+    background: rgba(255,230,240,0.65);
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #73344f;
+}
+
+.signature {
+    margin-top: 30px;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #7b3153;
+
+    text-align: center;
+}
+
+.final-hearts {
+    font-size: 27px;
+
+    margin: 20px 0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .page {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 25px 19px;
+    }
+
+    .page1-title {
+        font-size: 28px;
+    }
+
+    .question {
+        font-size: 21px;
+    }
+
+    .letter-message,
+    .promise,
+    .final-text {
+        font-size: 16px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING DECORATIONS -->
+
+<div class="heart h1">💗</div>
+<div class="heart h2">💕</div>
+<div class="heart h3">💖</div>
+<div class="heart h4">💞</div>
+<div class="heart h5">🌸</div>
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<div class="page" id="page1">
+
+<div class="card">
+
+    <div class="tiny">
+        🎀 💗 🎂 💗 🎀
+    </div>
+
+    <h1 class="page1-title">
+        Happy birthday to myy Mjasty 💕
+    </h1>
+
+    <p class="message">
+
+        Uss ak panne me mai to kuch bhi bhar naii skaa ji dil haii mere,
+        aur yaha bhii naii kar skta kuki abhi mai vakht ka mara hu,
+        lekin itna haii ki mai apko khus rakhne ki har ak koshish
+        karunga apni akhri sans tak ❤️
+
+    </p>
+
+    <div class="divider">
+        🌷 ── 💗 ── 🌷
+    </div>
+
+    <div class="question">
+
+        Will u b happy being my lifepartner until our end? 🥺💗
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="yes" onclick="goToPage2()">
+            Yes 💖
+        </button>
+
+        <button class="no" onclick="showSadScreen()">
+            No 🥺
+        </button>
+
+    </div>
+
+    <div class="footer">
+
+        Made with a little bit of courage & a lot of feelings 💌
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     SAD CAT SCREEN
+===================================================== -->
+
+<div id="sadScreen">
+
+    <div id="cat">
+        🥺🥺
+    </div>
+
+    <div id="sadText">
+        Are you sure malkin ji? 🥺💗
+    </div>
+
+    <div id="sadButtons">
+
+        <button id="sadYes"
+                class="yes"
+                onclick="goToPage2()">
+            Yes 💖
+        </button>
+
+        <button id="sadNo"
+                class="no"
+                onclick="sadNoClicked()">
+            No 🥺
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PAGE 2
+===================================================== -->
+
+<div class="page" id="page2">
+
+<div class="card">
+
+
+    <!-- ENVELOPE -->
+
+    <div id="envelopeSection">
+
+        <div style="font-size:21px;">
+            ✨ One more thing... ✨
+        </div>
+
+        <div class="envelope-area"
+             onclick="openEnvelope()">
+
+            <div class="envelope"
+                 id="envelope">
+
+                <div class="letter"></div>
+
+                <div class="flap"></div>
+
+            </div>
+
+        </div>
+
+        <div class="envelope-text">
+
+            💌 Tap the envelope to open it 💌
+
+        </div>
+
+    </div>
+
+
+    <!-- LETTER CONTENT -->
+
+    <div id="messageSection">
+
+        <div style="font-size:20px;">
+            💗 🌸 💗
+        </div>
+
+        <h2 class="page2-title">
+            To my Maharanii jii 👑💗
+        </h2>
+
+
+        <div class="letter-message">
+
+            Ajj ka din mere liye bahot jada hi jada wala khash haii,
+            kuki ajjke din mujhe apke chare per khud se khuc karke
+            ak muskan lane ka mauka mila. 🥹💗
+
+            <br><br>
+
+            Aur apka ye naukar apko vachan deta haii,
+            ki hameshaa issi koshish me rhega ki app khush rhen. 🌷
+
+            <br><br>
+
+            Apki khushiyon se meri khushiyan haii,
+            apse hi mai huu, apki ak muskan per sab war sktaa hun,
+            appka hu, aur apka hokar jina chahata hun. ❤️
+
+        </div>
+
+
+        <div class="highlight">
+
+            🎂 Happy Birthday, Maharanii jii 💗
+
+        </div>
+
+
+        <div class="cake">
+            🎂
+        </div>
+
+
+        <div class="icecream">
+            🍦🍨🍦
+        </div>
+
+
+        <div class="ice-text">
+
+            Because I knowww...
+            you love ice cream more than me 😭🍦❤️
+
+        </div>
+
+
+        <div style="font-size:22px; margin-bottom:18px;">
+
+            🎀 ✨ 🥳 ✨ 🎀
+
+        </div>
+
+
+        <button class="yes"
+                onclick="goToPage3()">
+
+            One more surprise 💌
+
+        </button>
+
+
+        <div class="footer">
+
+            Something is waiting on the next page... 👀💗
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     TRANSITION TO PAGE 3
+===================================================== -->
+
+<div id="transition">
+
+    <div class="transition-heart">
+        💗
+    </div>
+
+    <div class="transition-text">
+        Just one last thing... 🥺✨
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PAGE 3
+===================================================== -->
+
+<div class="page" id="page3">
+
+<div class="card">
+
+    <div style="font-size:22px;">
+        🌸 💗 ✨ 💗 🌸
+    </div>
+
+
+    <h1 class="final-title">
+        One More Surprise 💌
+    </h1>
+
+
+    <!-- PROMISE -->
+
+    <div class="promise">
+
+        Hum hamesha ak dusre ke sath haii. 🫶❤️
+
+        <br>
+
+        Apki problems merii problem aur merii problems
+        app meri hamsafar. 💗
+
+        <br>
+
+        Hum hamesha ak dusre ko smjhenge,
+        aur ak dusre ka ban ke rahenge. 🌷
+
+    </div>
+
+
+    <div class="promise-box">
+
+        👑💗
+        <br>
+
+        Ye ak naukar unki Maharani ji ko promise karta haii. 🥹
+
+    </div>
+
+
+    <!-- I LOVE YOU -->
+
+    <div class="love-title">
+
+        ❤️ I LOVE YOU ❤️
+
+    </div>
+
+
+    <div class="final-text">
+
+        <br>
+
+        U r my everything. 🥹❤️
+
+        <br><br>
+
+        Appne mujhse 2 din bat naii ki,
+        merii jann gale tak agyii thi 😭
+
+        <br>
+
+        3 din hota to ptaa naii kyaa hotaa... 🥺💔
+
+        <br><br>
+
+        Bass maii apse ye khna chachta hu ki,
+        kitta bhii gussa ayye,
+        app pass rah kar mujhpe gussa utarogi. 🥺❤️
+
+        <br>
+
+        Mujhse dur ya akele jane ki jarurat naii haii.
+
+        <br><br>
+
+        Maai hameshaa apko smjhne aur
+        smhhane ke liye rahunga. 🫶🌸
+
+    </div>
+
+
+    <!-- QUOTE -->
+
+    <div class="quote">
+
+        If a million love you,
+        I'm one of them. ❤️
+
+        <br><br>
+
+        If a hundred love you,
+        I'm one of them. 💗
+
+        <br><br>
+
+        If only one loves you,
+        I'm that one. 🫶
+
+        <br><br>
+
+        If no one loves you,
+        Then I'm no more
+
+        <br>
+
+        <b>Your naukar is always with you. ❤️</b>
+
+    </div>
+
+
+    <div class="final-text">
+
+        U dont matter my life,
+        u r my whole life. 💗
+
+        <br><br>
+
+        Kabhii bhi khud ko akela naii samjhiyaga...
+
+        <br>
+
+        <b>your naukar is always with you. 🥹❤️</b>
+
+    </div>
+
+
+    <!-- SIGNATURE -->
+
+    <div class="signature">
+
+        💌 With Love 💌
+
+        <br><br>
+
+        <b>Your husband jii</b> ❤️
+
+        <br>
+
+        <b>Your best friend</b> 🫶
+
+        <br>
+
+        <b>And your naukar</b> 👑💗
+
+    </div>
+
+
+    <div class="final-hearts">
+
+        💗 💕 💖 💞 💗
+
+    </div>
+
+
+    <div style="font-size:20px;">
+
+        🎂✨ Happy Birthday once again,
+        Maharanii ji ✨🎂
+
+    </div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   PAGE 1 → PAGE 2
+===================================================== */
+
+function goToPage2() {
+
+    document.getElementById("page1").style.display = "none";
+
+    document.getElementById("sadScreen").style.display = "none";
+
+    document.getElementById("page2").style.display = "flex";
+
+    window.scrollTo(0, 0);
+
+}
+
+
+/* =====================================================
+   NO BUTTON
+===================================================== */
+
+function showSadScreen() {
+
+    document.getElementById("page1").style.display = "none";
+
+    document.getElementById("sadScreen").style.display = "flex";
+
+}
+
+
+/* =====================================================
+   SAD CAT SEQUENCE
+===================================================== */
+
+let noCount = 0;
+
+function sadNoClicked() {
+
+    noCount++;
+
+    const cat =
+        document.getElementById("cat");
+
+    const text =
+        document.getElementById("sadText");
+
+    const yes =
+        document.getElementById("sadYes");
+
+    const no =
+        document.getElementById("sadNo");
+
+
+    if (noCount === 1) {
+
+        cat.innerHTML = "🥺";
+
+        text.innerHTML =
+            "App no keh rhii hain  🥺💗";
+
+        yes.style.transform =
+            "scale(1.25)";
+
+    }
+
+
+    else if (noCount === 2) {
+
+        cat.innerHTML = "😿";
+
+        text.innerHTML =
+            "Mai rone lagunga 😿💔";
+
+        yes.style.transform =
+            "scale(1.55)";
+
+        no.style.transform =
+            "scale(0.9)";
+
+    }
+
+
+    else if (noCount === 3) {
+
+        cat.innerHTML = "😭";
+
+        text.innerHTML =
+            "App nai manogi na bina mujhe rulaye 😭💗";
+
+        yes.style.transform =
+            "scale(1.9)";
+
+        no.style.transform =
+            "scale(0.75)";
+
+    }
+
+
+    else {
+
+        no.classList.add("hidden");
+
+        cat.innerHTML =
+            "😭🐱💔";
+
+        text.innerHTML =
+            "There is only ONE choice left now... 🥺❤️";
+
+
+        yes.style.position = "fixed";
+
+        yes.style.inset = "0";
+
+        yes.style.width = "100%";
+
+        yes.style.height = "100%";
+
+        yes.style.borderRadius = "0";
+
+        yes.style.fontSize = "32px";
+
+        yes.style.transform = "none";
+
+    }
+
+}
+
+
+/* =====================================================
+   ENVELOPE
+===================================================== */
+
+function openEnvelope() {
+
+    const envelope =
+        document.getElementById("envelope");
+
+    const envelopeSection =
+        document.getElementById("envelopeSection");
+
+    const messageSection =
+        document.getElementById("messageSection");
+
+
+    envelope.classList.add("open");
+
+
+    setTimeout(function() {
+
+        envelopeSection.style.display = "none";
+
+        messageSection.style.display = "block";
+
+    }, 900);
+
+}
+
+
+/* =====================================================
+   PAGE 2 → PAGE 3
+===================================================== */
+
+function goToPage3() {
+
+    const page2 =
+        document.getElementById("page2");
+
+    const transition =
+        document.getElementById("transition");
+
+    const page3 =
+        document.getElementById("page3");
+
+
+    page2.style.display = "none";
+
+    transition.style.display = "flex";
+
+
+    setTimeout(function() {
+
+        transition.style.display = "none";
+
+        page3.style.display = "flex";
+
+        window.scrollTo(0, 0);
+
+    }, 1800);
+
+}
+
+</script>
+
+</body>
+</html>
